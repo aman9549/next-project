@@ -4,7 +4,11 @@ import ExploreBtn from '@/components/ExploreBtn'
 const events = [
   {
     image:'/images/event1.png',
-    title:'Event 1'
+    title:'Event 1',
+    slug:'event-1',
+    location:'location-1',
+    date:'Date-1',
+    time:'Time-1'
   },
   {
     image:'/images/event2.png',
@@ -23,7 +27,7 @@ const Page = () => {
             <div className="mt-20 space-y-2">
               <h3>Featured Events</h3>
 
-              <ul className='events'>
+              <ul className='events list-none'>
                 {
                   events.map((event)=>{
                     return(
